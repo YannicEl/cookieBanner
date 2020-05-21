@@ -1,0 +1,17 @@
+<h1>Hiii</h1>
+
+<cookie-banner
+	application-name="name"
+	policy-link="policy-link"
+></cookie-banner>
+
+<script>
+	const elm = document.getElementsByTagName('cookie-banner')[0];
+	console.log(elm);
+
+	elm.addEventListener('on-accept', () => {
+		console.log('on-accept');
+	});
+</script>
+
+<script src="./cookieBanner.js"></script>
